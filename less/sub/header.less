@@ -1,0 +1,106 @@
+@import '../partials/params';
+
+.html #header {
+  @media @mobile {
+    margin-top: 10px;
+
+    & #logo {
+      width: auto;
+      margin-bottom: 0;
+    }
+
+    & #site-slogan {
+      display: none;
+    }
+
+    & #header-contacts {
+      display: none;
+    }
+
+    & .secondary-menu-outer {
+      display: none;
+    }
+
+    & #main-menu-outer.close {
+      height: 0;
+      overflow: hidden;
+    }
+
+    & .fa {
+      position: absolute;
+      margin-left: 10px;
+      top: 10px;
+      font-size: @bottom-panel-font+5px;
+      cursor: pointer;
+      &.close {
+        display: none;
+      }
+      &.fa-bars, &.fa-times  {
+        right: 10px;
+      }
+
+      &.fa-phone {
+        right: 60px;
+      }
+    }
+
+    & #main-menu-outer {
+      height: 384px;
+      position: absolute;
+      bottom: -384px;
+      padding-bottom: 10px;
+      left: 0;
+      border-top: 1px solid @border-color;
+      background: @white-color;
+      width: 100%;
+      z-index: 10;
+      transition: all 0.5s ease;
+      & #main-menu-wrapper {
+        max-height: inherit;
+
+        & .mobile {
+          display: flex;
+          flex-direction: column-reverse;
+          & > div {
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: center;
+            font-size: 14px;
+            text-transform: none;
+            &.phone {
+              display: none;
+            }
+
+            & .social_icons {
+              position: relative;
+              top: 25px;
+              text-align: center;
+              & img {
+                float: none;
+              }
+            }
+          }
+        }
+        & a#send_request {
+          position: static !important;
+          margin: 0 auto;
+        }
+        & ul#main-menu {
+          height: auto;
+          li {
+            float: none;
+            text-align: left;
+            font-size: 14px;
+
+            & a {
+              padding: 10px;
+              border-bottom: 1px solid @border-color;
+            }
+          }
+        }
+
+      }
+    }
+
+  }
+}

@@ -1,0 +1,54 @@
+@import "../partials/params";
+
+@media @mobile {
+  .html #footer {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding-bottom: 80px;
+    & .region-footer-menu {
+      display: none;
+    }
+
+    & #footer-contacts {
+      display: none;
+    }
+
+    & #footer-copyright {
+      display: none;
+    }
+
+    & #block-menu-menu-footer-menu {
+      display: none;
+    }
+    & .secondary-menu-outer + div {
+        padding: 20px 0 0 20px;
+    }
+  }
+  & .mobile-secondary-menu {
+
+    & li {
+      padding: 5px 20px;
+      float: left;
+      list-style: none;
+      font-size: 16px;
+      border-left: 1px solid @border-color;
+      &:first-child {
+        border-left: none;
+      }
+      & a {
+        color: @text-color;
+        font-weight: bold;
+      }
+    }
+  }
+
+& .full-version {
+  display: inline-block;
+  padding: 20px;
+  color: @border-color;
+  text-decoration: none;
+
+}
+
+}
