@@ -17,7 +17,9 @@
       }
     }
 
-    & #services-menu-links li {
+    & #services-menu-links {
+      margin-bottom: 15px;
+      & li {
       display: block;
       float: left;
       width: 50%;
@@ -31,6 +33,7 @@
         height: 30px;
         text-align: center;
         padding-top: 45px;
+        font-size: 0;
         & img {
           height: @icons-font-size;
           position: absolute;
@@ -38,7 +41,7 @@
           left: ~'calc(50% - 12px)';
         }
       }
-    }
+    }}
 
     & #video-review {
       position: relative;

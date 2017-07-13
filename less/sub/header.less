@@ -24,6 +24,7 @@
     & #main-menu-outer.close {
       height: 0;
       overflow: hidden;
+      padding-bottom: 0;
     }
 
     & .fa {
@@ -47,14 +48,14 @@
     & #main-menu-outer {
       height: 384px;
       position: absolute;
-      bottom: -384px;
+      top: 95px;
       padding-bottom: 10px;
       left: 0;
       border-top: 1px solid @border-color;
       background: @white-color;
       width: 100%;
       z-index: 10;
-      transition: all 0.5s ease;
+      transition: all 1s ease;
       & #main-menu-wrapper {
         max-height: inherit;
 
