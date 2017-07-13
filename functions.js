@@ -78,9 +78,10 @@ function setSendRequestButton(){
 }
 
 function setPartnersBlock() {
-    var partnersBlock = $('#content > div:first-child').clone();
-    partnersBlock.attr('class', 'mobile partners').css({'margin': ''});
+
     if ($('.region-highlighted .partners').length == 0) {
+        var partnersBlock = $('#content > div:first-child').clone();
+        partnersBlock.attr('class', 'mobile partners').css({'margin': ''});
         partnersBlock.appendTo('.region-highlighted');
         slideAward();
     }
