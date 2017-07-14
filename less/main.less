@@ -18,10 +18,13 @@
   }
   
   & .bottom-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 80px;
+    height: 90px;
     text-align: center;
     font-size: @bottom-panel-font;
     background-color: @white-color;
@@ -33,7 +36,6 @@
       width: @bottom-panel-font;
       height: @bottom-panel-font;
       padding: @bottom-panel-font / 1.5;
-      margin: 15px 10% 0;
     }
   }
 }
